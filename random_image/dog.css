@@ -1,0 +1,23 @@
+body {
+    position: relative;
+}
+
+#click {
+    background: #C2C0BC;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid black;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+#frame {
+    background: #A1A1A1;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid black;
+    display: none;
+    margin: 0px auto;
+}

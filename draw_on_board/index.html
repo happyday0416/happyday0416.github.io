@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>畫畫</title>
+    <link rel="stylesheet" href="painting.css">
+    <script type="text/javascript" src="painting.js"></script>
+</head>
+
+<body id="mondrian">
+    <div id="container">
+        <div id="title">
+            <h1>選擇一個顏色畫在畫布上</h1></div>
+        <div id="spacer_container">
+            <!-- This keeps the footer from overlapping the workspace. -->
+            <div id="workspace">
+                <div id="color_palette">
+                    <div class="color" id="orange" onclick="chooseOrange();"></div>
+                    <div class="color" id="yellow" onclick="chooseYellow();"></div>
+                    <div class="color" id="blue" onclick="chooseBlue();"></div>
+                    <div class="color" id="green" onclick="chooseGreen();"></div>
+                </div>
+                <div id="painting">
+                    <div id="row_1">
+                        <div class="row" id="row_1_box_1" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_1_box_2" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_1_box_3" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_1_box_4" onclick="painting(this.id);"></div>
+                    </div>
+                    <div id="row_2">
+                        <div class="row" id="row_2_box_1" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_2_box_2" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_2_box_3" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_2_box_4" onclick="painting(this.id);"></div>
+                    </div>
+                    <div id="row_3">
+                        <div class="row" id="row_3_box_1" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_3_box_2" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_3_box_3" onclick="painting(this.id);"></div>
+                        <div class="row" id="row_3_box_4" onclick="painting(this.id);"></div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

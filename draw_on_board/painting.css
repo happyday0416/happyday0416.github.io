@@ -1,0 +1,79 @@
+body {
+    background-color: #aaa;
+}
+
+#container {
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#workspace {
+    background-color: #ffffe0;
+    width: 840px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    box-shadow: 0 0 5px black;
+}
+
+#color_palette {
+    float: left;
+}
+
+.color {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#painting {
+    float: right;
+    width: 690px;
+    border: 10px solid #333;
+}
+
+.row {
+    float: left;
+    height: 165px;
+    width: 165px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.clear {
+    clear: both;
+}
+
+#row_3_box_1,
+#row_3_box_2,
+#row_3_box_3,
+#row_3_box_4 {
+    border-bottom: none;
+}
+
+#row_1_box_4,
+#row_2_box_4,
+#row_3_box_4 {
+    border-right: none;
+}

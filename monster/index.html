@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>野獸現蹤</title>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="beast_track.css">
+</head>
+
+<body>
+    <div class="ui-widget-header">
+        <h2>野獸位置圖</h2>
+    </div>
+    <div class="row">
+        <div class=" col-md-6">
+            <div id="main">
+                <h2>野獸資訊</h2>
+                <h3>發現日期：</h3>
+                <input type="text" name="date" id="datepicker">
+                <div id="species">
+                    <h3>種類：</h3>
+                    <input type="radio" id="radio1" name="type" value="獅子">
+                    <label for="radio1">獅子</label>
+                    <input type="radio" id="radio2" name="type" value="老虎">
+                    <label for="radio2">老虎</label>
+                    <input type="radio" id="radio3" name="type" value="灰狼">
+                    <label for="radio3">灰狼</label>
+                    <input type="radio" id="radio4" name="type" value="花豹">
+                    <label for="radio4">花豹</label>
+                </div>
+                <h3>距離</h3>
+                <input type="text" id="distance" class="just_display" name="distance" readonly="readonly">
+                <div id="slide_dist"></div>
+                <h3>重量</h3>
+                <input type="text" id="weight" class="just_display" name="weight" readonly="readonly">
+                <div id="slide_weight"></div>
+                <h3>高度</h3>
+                <input type="text" id="height" class="just_display" name="height" readonly="readonly">
+                <div id="slide_height"></div>
+                <h3>緯度</h3>
+                <input type="text" id="latitude" class="just_display" name="latitude" readonly="readonly">
+                <div id="slide_latitude"></div>
+                <h3>經度</h3>
+                <input type="text" id="longitude" class="just_display" name="longitude" readonly="readonly">
+                <div id="slide_longitude"></div>
+                <button id="submit">提交訊息</button>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="col-md-6">
+            <div id="map_canvas"></div>
+            <!--<h2>野獸位置</h2>-->
+            <div id="sight_nav">
+                <ul id="sight_list">
+                    <li id="info_date"></li>
+                    <li id="info_type"></li>
+                    <li id="info_distance"></li>
+                    <li id="info_weight"></li>
+                    <li id="info_height"></li>
+                    <li id="info_latitude"></li>
+                    <li id="info_longitude"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="beast_track.js"></script>
+</body>
+
+</html>

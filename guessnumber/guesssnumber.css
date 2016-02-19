@@ -1,0 +1,37 @@
+#btn_onemore {
+    display: none;
+}
+
+.main {
+    text-align: center;
+}
+
+h3 {
+    display: inline;
+}
+
+#guess {
+    padding: 5px 5px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#enter {
+    border: 0;
+    background: #0088cc;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #FFF;
+    transition: all .1s linear;
+    margin: 20px;
+}
+
+#btn_onemore {
+    border: 0;
+    background: #00cc88;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #FFF;
+    transition: all .1s linear;
+    margin: 20px;
+}

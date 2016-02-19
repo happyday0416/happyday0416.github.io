@@ -1,0 +1,21 @@
+body {
+    background-color: #101010;
+}
+
+#main {
+    width: 605px;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 100px;
+    background-color: #444;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}

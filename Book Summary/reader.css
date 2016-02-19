@@ -1,0 +1,78 @@
+body {
+    background-image: url('boss-fight-.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+.articles {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article {
+    color: #060606;
+    background: rgba(150, 150, 150, 0.5);
+    border-spacing: 2px;
+    border-color: gray;
+    font-family: Microsoft JhengHei, sans-serif, MingLiU;
+    border-bottom: 1px #666666 solid;
+}
+
+.article h2 {
+    border-bottom: 1px #666666 solid;
+    text-align: center;
+    font-size: 30px;
+}
+
+.current .item {
+    border-radius: 10px;
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.item {
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.item .source {
+    text-align: center;
+}
+
+.item .title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.item .pubdate {
+    text-align: center;
+}
+
+.description {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description h3,
+.description p {
+    font-family: Microsoft JhengHei, sans-serif, MingLiU;
+    text-align: center;
+}

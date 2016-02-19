@@ -1,0 +1,59 @@
+#main {
+    height: 500px;
+}
+
+.tab {
+    position: relative;
+    float: left;
+    background-color: #BAC6BD;
+    height: 100px;
+    width: 100px;
+}
+
+#tab_container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.day {
+    font-family: Arial, Calibri, Comic Sans MS;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #43B6F2;
+}
+
+#id_today {
+    font-family: Arial, Calibri, Comic Sans MS;
+    height: 300px;
+    background-color: #585858;
+}
+
+#id_today .day {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+#message {
+    padding: 50px;
+    font-size: 40px;
+    font-family: Arial, Calibri, Comic Sans MS;
+    color: white;
+    background-color: #FE5555;
+}
+
+#message {
+    padding: 50px;
+    font-size: 40px;
+    font-family: Arial, Calibri, Comic Sans MS;
+    color: white;
+    background-color: #FA9494;
+    margin: 0 auto;
+    text-align: center;
+}

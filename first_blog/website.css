@@ -1,0 +1,189 @@
+body {
+    max-width: 100 auto;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, Verdana, sans-serif;
+}
+
+#main1 {
+    margin: 0 auto;
+}
+
+#main {
+    margin: 0 auto;
+}
+
+.fa-quote-left {
+    color: #B5B5B5;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Arial, Comic Sans MS, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 3px 2px 2px #BDBDBD;
+}
+
+hr {
+    width: 70%;
+    height: 2px;
+    background-color: #0E0C0C;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: sans-serif, arial, helvetica;
+}
+
+q {
+    font-size: 20px;
+    font-family: Arial, Verdana, sans-serif;
+    color: #D1D1D1;
+}
+
+.fa-globe {
+    font-size: 15px;
+    color: #CCC9C9;
+    padding: 10px 20px;
+}
+
+.fa-plane {
+    font-size: 15px;
+    color: #CCC9C9;
+    padding: 10px 20px;
+}
+
+.fa-cutlery {
+    font-size: #BBB9B9;
+}
+
+.fa-tag {
+    font-size: 15px;
+    color: #CCC9C9;
+    padding: 10px 20px;
+}
+
+.fa-coffee {
+    font-size: 15px;
+    color: #CCC9C9;
+    padding: 10px 20px;
+}
+
+
+/*最上層nav*/
+
+.nav a {
+    border-width: 3px;
+    position: static;
+    color: #F17B7B;
+    text-shadow: 2px 2px 1px #DFB2B2;
+    font-family: Comic Sans MS, Verdana, sans-serif;
+    font-size: 20px;
+    width: 100px;
+    padding: 15px 35px;
+    text-decoration: none;
+}
+
+.thumbnail {
+    font-size: 50px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.test2 {
+    font-size: 60px;
+    line-height: 100px;
+    color: #4C4C4C;
+    margin-left: -250px;
+    margin-top: -80px;
+    font-family: Comic Sans MS, Arial, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+/*h1底下的圖*/
+
+.jumbotron {
+    position: static;
+    /*max-width: 100% auto;*/
+    background-image: url(images/IMG_2443.jpg);
+    float: none;
+    height: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.travel1 {
+    font-family: Comic Sans MS, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.jumbotron p {
+    font-size: 28px;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Comic Sans MS, Georgia, Time New Roman;
+}
+
+.learn-more {
+    background-color: #030303;
+}
+
+.learn-more h3 {
+    font-family: Comic Sans MS, Georgia, Time New Roman, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.learn-more a {
+    color: #989898;
+}
+
+.learn-more h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.container {
+    font-size: 20px;
+    text-align: center;
+}
+
+.fa-facebook-square {
+    font-size: 25px;
+}
+
+.fa-instagram {
+    font-size: 25px;
+}
+
+.thumbnail p {
+    color: #818181;
+    font-size: 20px;
+}
