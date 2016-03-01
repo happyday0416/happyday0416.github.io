@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="Chartjs/Chart.js"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery.idTabs.min.js"></script>
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>BIGDATA</title>
+</head>
+
+<body>
+    <div class="login">
+        <h1>您当前阅览的是DEMO数据，想获得自己产品的数据?&nbsp<a href="#">立即注册使用</a>  
+        </h1>
+    </div>
+    <div class="talkinggame" id="topheader">
+        <div class="header">
+            <div class="header2">
+                <a href="#"><img src="images/home-menu-item.png"></a>
+            </div>
+            <div class="header3" id="topheader1">
+                <div class="newdemo">
+                    <a href="#">数据中心</a>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <button class="dropbtn">New Demo<i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                        </div>
+                    </div>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-apple"></i><i class="fa fa-android"></i><i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--下拉式選單-->
+            <div class="navbar">
+                <dt><i class="fa fa-bars fa-fw"></i><a href="#">概览</a></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">游戏概况</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-user fa-fw"></i><a href="#">游戏玩家</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">新增玩家</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">活跃玩家</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">玩家留存</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">付费转化</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">玩家流失</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">游戏习惯</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">设备相关</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-clock-o fa-fw"></i><a href="#">在线分析</a></dt>
+                <dd></dd>
+                <dt><i class="fa fa-star fa-fw"></i><a href="#">等级分析</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">等级详解</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">等级分布</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">新玩家进度</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-gamepad fa-fw"></i><a href="#">任务分析</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">任務與關卡</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-usd fa-fw"></i><a href="#">收入分析</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">收入數據</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">付費滲透</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">新玩家價值</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">付費習慣</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-jpy fa-fw"></i><a href="#">虛擬消費</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">虛擬幣</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">消費喜好</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">消費點</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-shopping-cart fa-fw"></i><a hreff="#">鯨魚用戶</a></dt>
+                <dd></dd>
+                <dt><i class="fa fa-bar-chart fa-fw"></i><a href="#">推广渠道</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">渠道数据</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-cogs fa-fw"></i><a href="#">定义事件</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">事件数据</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-area-chart fa-fw"></i><a href="#">分析工具</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">预警通知</a></li>
+                        <li><i class="fa fa-caret-right"></i><a href="#">报表备注</a></li>
+                    </ul>
+                </dd>
+                <dt><i class="fa fa-mobile fa-fw"></i><a href="#">推送营销</a><i class="fa fa-caret-down"></i></dt>
+                <dd>
+                    <ul>
+                        <li><i class="fa fa-caret-right"></i><a href="#">推送营销</a></li>
+                    </ul>
+                </dd>
+            </div>
+            <!--下拉式選單結束-->
+            <div class="mainbar">
+                <div class="player">
+                    <li class="slidebar">
+                        <span id="set">设备激活</span>
+                        <strong id="number">55411</strong>
+                    </li>
+                    <li class="slidebar1">
+                        <span id="set1">新增玩家</span>
+                        <strong id="number1">65543</strong>
+                    </li>
+                    <li class="slidebar2">
+                        <span id="set2">付费玩家</span>
+                        <strong id="number2">1634</strong>
+                    </li>
+                    <li class="slidebar3">
+                        <span id="set3">收入</span>
+                        <strong id="number3">908.16</strong>
+                    </li>
+                    <div class="btn-group dropdown">
+                        <button type="button" class="btn btn-default"><i class="fa fa-calendar fa-1x"></i>日期选择 :近7日
+                            <br/>2014-08-24 ~ 2014-08-31</button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                        </ul>
+                    </div>
+                </div>
+                <!--在线趋势-->
+                <div class="mainbar-1">
+                    <div class="panel panel-default panel_1">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">在线趋势</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="gauge">
+                                <canvas id="gaugeChart" width="200" height="200"></canvas>
+                            </div>
+                            <div class="canvas_bar">
+                                <canvas id="myChart" width="600" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!--关键指标-->
+                    <div class="panel panel-default panel_2 choosed_1 choosed_chart">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">关键指标</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#" id="keyChartShow"><i class="fa fa-table fa-2x"></i></a>
+                            <a href="#" id="keyTableShow"><i class="fa fa-line-chart fa-2x"></i></a>
+                            <div class="panel_tab">
+                                <ul class="idTabs">
+                                    <li><a href="#keyChar_1" title="设备激活:当日新增加的激活设备量;
+            新增玩家:当日新增加的玩家帐户数" id="change1">新增激活和账户</a></li>
+                                    <li><a href="#keyChar_2" title="当日有开启过游戏的玩家数，其中当日新增玩家带来的活跃以区别的颜色显示" id="change2">活跃玩家</a></li>
+                                    <li><a href="#keyChar_3" title="当日中进行过充值的玩家数，其中当日首次充值的新增付费玩家会以区别的颜色显示" id="change3">付费玩家</a></li>
+                                    <li><a href="#keyChar_4" title="当日玩家充值的货币总额" id="change4">收入</a></li>
+                                </ul>
+                                <span id="playval_1"><h5>SUM 设备 | 账户：</h5><h4>55411</h4> | <h4>65543</h4>&nbsp;&nbsp;&nbsp;&nbsp; <h5>AVG 设备 | 账户：</h5><h4>6926</h4> | <h4>8193</h4></span>
+                                <div id="keyChar_1">
+                                    <canvas id="keyChart1" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="keyCharttable1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>日期</th>
+                                                <th>設置激活</th>
+                                                <th>新增玩家</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>6505</td>
+                                                <td>7745</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>6789</td>
+                                                <td>8043</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>7217</td>
+                                                <td>8741</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>7146</td>
+                                                <td>8614</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>6732</td>
+                                                <td>7896</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>6201</td>
+                                                <td>7323</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>6882</td>
+                                                <td>8130</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>7939</td>
+                                                <td>9051</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="keyChar_2">
+                                    <canvas id="keyChart2" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="keyCharttable2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>新玩家</th>
+                                                <th>老玩家</th>
+                                                <th>總計</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>7745</td>
+                                                <td>19550</td>
+                                                <td>27295</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>8043</td>
+                                                <td>19505</td>
+                                                <td>27548</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>8741</td>
+                                                <td>20587</td>
+                                                <td>29328</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>8614</td>
+                                                <td>21332</td>
+                                                <td>29946</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>7896</td>
+                                                <td>18094</td>
+                                                <td>25990</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>7323</td>
+                                                <td>18481</td>
+                                                <td>25804</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>8130</td>
+                                                <td>17613</td>
+                                                <td>25743</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>9051</td>
+                                                <td>16503</td>
+                                                <td>25554</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="keyChar_3">
+                                    <canvas id="keyChart3" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="keyCharttable3">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>新增付費玩家(帳戶)</th>
+                                                <th>老付費玩家(帳戶)</th>
+                                                <th>總計</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>203</td>
+                                                <td>61</td>
+                                                <td>261</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>197</td>
+                                                <td>50</td>
+                                                <td>247</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>179</td>
+                                                <td>67</td>
+                                                <td>246</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>189</td>
+                                                <td>69</td>
+                                                <td>258</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>171</td>
+                                                <td>41</td>
+                                                <td>212</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>177</td>
+                                                <td>57</td>
+                                                <td>234</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>205</td>
+                                                <td>46</td>
+                                                <td>251</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>174</td>
+                                                <td>50</td>
+                                                <td>224</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="keyChar_4">
+                                    <canvas id="keyChart4" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="keyCharttable4">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>收入</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>144.48</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>101.92</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>122.08</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>122.4</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>92.32</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>103.68</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>105.28</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>116</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--付费渗透-->
+                    <div class="panel panel-default panel_3 choosed_1 choosed_chart">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">付费渗透</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#" id="payChartShow"><i class="fa fa-table fa-2x"></i></a>
+                            <a href="#" id="payTableShow"><i class="fa fa-line-chart fa-2x"></i></a>
+                            <div class="panel_tab">
+                                <ul class="idTabs">
+                                    <li><a href="#payChar_1" title="当日内付费玩家数占当日活跃玩家数的比例" id="payChange1">日付费率</a></li>
+                                    <li><a href="#payChar_2" title="当日每活跃玩家平均收入（收入/活跃玩家）" id="payChange2">日ARPU</a></li>
+                                    <li><a href="#payChar_3" title="当日每付费玩家平均收入（收入/付费玩家数）" id="payChange3">日ARPPU</a></li>
+                                </ul>
+                                <span id="payVal"><h5>AVG：</h5><h4>1%</h4></span>
+                                <div id="payChar_1">
+                                    <canvas id="payChart1" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="payCharttable1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>收入</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>0.97</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>0.9</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>0.84</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>0.86</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>0.82</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>0.91</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>0.98</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>0.88</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="payChar_2">
+                                    <canvas id="payChart2" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="payCharttable2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>日ARPU(￥)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>0.01</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="payChar_3">
+                                    <canvas id="payChart3" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="payCharttable3">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>日ARPU(￥)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>0.55</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>0.41</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>0.5</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>0.47</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>0.44</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>0.44</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>0.42</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>0.52</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--玩家留存-->
+                    <div class="panel panel-default panel_4 choosed_1 choosed_chart">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">玩家留存</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#" id="playerChartShow"><i class="fa fa-table fa-2x"></i></a>
+                            <a href="#" id="playerTableShow"><i class="fa fa-line-chart fa-2x"></i></a>
+                            <div class="panel_tab">
+                                <ul class="idTabs">
+                                    <li><a href="#playerChar_1" title="某日新增的玩家/设备中，在该日后的第N日中，还有进行游戏的玩家/设备比例。例如：5月3日新增玩家为100人，这100人中有24人在5月10日这一天内还有玩过游戏，5月3日的7日留存率=24/100=24%" id="playChange1">新增账户留存</a></li>
+                                    <li><a href="#playerChar_2" title="某日新增的玩家/设备中，在该日后的第N日中，还有进行游戏的玩家/设备比例。例如：5月3日新增玩家为100人，这100人中有24人在5月10日这一天内还有玩过游戏，5月3日的7日留存率=24/100=24%" id="playChange2">激活设备留存</a></li>
+                                </ul>
+                                <span id="playerVal"><h5>AVG：次日</h5><h4>15%</h4> <h5> | </h5> <h5>7日</h5> <h4> 6% </h4> <h5> | </h5>  <h5>30日</h5> <h4> 2%</h4> </span>
+                                <div id="playerChar_1">
+                                    <canvas id="playerChar1" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="playerCharttable1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>次日留存率(%)</th>
+                                                <th>7日留存率(%)</th>
+                                                <th>30日留存率(%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>11.6</td>
+                                                <td>3.3</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>15.4</td>
+                                                <td>5.9</td>
+                                                <td>2.4</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>14.5</td>
+                                                <td>5.9</td>
+                                                <td>2.3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>11.4</td>
+                                                <td>6.5</td>
+                                                <td>2.3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>15.7</td>
+                                                <td>6.4</td>
+                                                <td>2.4</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>11.9</td>
+                                                <td>5.6</td>
+                                                <td>2.1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>15.1</td>
+                                                <td>7.2</td>
+                                                <td>2.7</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>23.4</td>
+                                                <td>8.6</td>
+                                                <td>3.1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="playerChar_2">
+                                    <canvas id="playerChar2" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="playerCharttable2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>7日留存率(%)</th>
+                                                <th>30日留存率(%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>12.5</td>
+                                                <td>3.5</td>
+                                                <td>2.1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>16.5</td>
+                                                <td>6.5</td>
+                                                <td>3.7</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>15.4</td>
+                                                <td>6.3</td>
+                                                <td>2.4</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>11.9</td>
+                                                <td>6.9</td>
+                                                <td>2.6</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>16.7</td>
+                                                <td>6.4</td>
+                                                <td>2.6</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>12.5</td>
+                                                <td>5.9</td>
+                                                <td>2.2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>14.9</td>
+                                                <td>7.5</td>
+                                                <td>2.9</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>25.2</td>
+                                                <td>9.2</td>
+                                                <td>3.8</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--playTime-->
+                    <div class="panel panel-default panel_5 choosed_chart">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">平均游戏时长与次数</h3>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#" id="playtimeChartShow"><i class="fa fa-table fa-2x"></i></a>
+                            <a href="#" id="playtimeTableShow"><i class="fa fa-line-chart fa-2x"></i></a>
+                            <div class="panel_tab">
+                                <span id="playtimeVal"><h5>AVG：平均每玩家每日游戏</h5> <h3>42分钟</h3> </span>
+                                <div id="playtimeChar_1">
+                                    <canvas id="playtimeChar1" width="1005" height="330"></canvas>
+                                </div>
+                                <div id="playtimeCharttable1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>日期</th>
+                                                <th>平均遊戲次數(次)</th>
+                                                <th>平均遊戲次數(分)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2014-08-24</td>
+                                                <td>3.1</td>
+                                                <td>41</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2014-08-25</td>
+                                                <td>3.1</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>2014-08-26</td>
+                                                <td>3</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>2014-08-27</td>
+                                                <td>3</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>2014-08-28</td>
+                                                <td>3</td>
+                                                <td>42</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>2014-08-29</td>
+                                                <td>3</td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>2014-08-30</td>
+                                                <td>3</td>
+                                                <td>44</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2014-08-31</td>
+                                                <td>3.1</td>
+                                                <td>44</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---END-->
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
